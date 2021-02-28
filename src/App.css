@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
+  /* // book-search     app  search-results   search-result   "book in searchResults.items   search-result--thumbnail   search-result--info   "search-result--title */
+  /* // book.volumeInfo.authors   search-result--authors   book.volumeInfo.publishedDate   search-result--published */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+*,*:before,*:after { box-sizing: inherit }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html  {
+  box-sizing: border-box;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+body {
+  margin: auto;
+  background-color: #faf7f6;
+  color: #805466;
+}
+
+#app {
+  padding: 5%;
+}
+
+#book-search { 
+  align-items: flex-end;
+}
+
+label span {
+  display: block;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+input {
+  padding: .2rem .5rem;
+  border-radius: .25rem;
+  border: 2px solid #f3edeb;
+  margin-top: .25rem;
+  margin-right: .25rem;
+  box-shadow: 0 .4rem 1rem -.4rem #d4b1a5;
+}
+
+button {
+  background: rebeccapurple;
+  position: relative;
   color: white;
+  border: none;
+  padding: 0 .75rem;
+  border-radius: .25rem;
+  font-size: .6rem;
+  line-height: 2.8;
+  text-transform: uppercase;
+  box-shadow: 0 .4rem 1rem -.4rem purple;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.search-result {
+  background-color: white;
+  position: relative;
+  border: 2px solid #f3edeb;
+  border-radius: .25rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 1rem -.75rem #dfc8c0;
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-result--thumbnail {
+  flex: none;
+  width: 15%;
+  width: 4rem;
+  height: auto;
+  align-self: flex-start;
 }
+
+.search-result--info {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: .5rem;
+  list-style: none;
+}
+
+.search-result--title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #65002a;
+}
+
+.search-result--authors {
+  font-size: .9rem
+}
+
+.search-result--published {
+  font-size: .8rem;
+}
+
+
+
+.books{
+  margin: 0px 0px 100px 0px;
+} 
