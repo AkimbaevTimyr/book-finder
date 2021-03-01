@@ -8,7 +8,7 @@ const book = (state=initialState, action) =>{
         case 'SET_DATA':
             return{
                 ...state,
-                data: [...state.data, action.payload]
+                data: [action.payload]
 
             }
         default:

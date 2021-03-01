@@ -22,6 +22,9 @@ body {
 
 #book-search { 
   align-items: flex-end;
+  display: flex;
+  margin: 0px 0px 0px -10px;
+  align-items: flex-end;
 }
 
 label span {
@@ -63,6 +66,7 @@ button {
   box-shadow: 0 1rem 1rem -.75rem #dfc8c0;
   display: flex;
   align-items: center;
+  margin: 30px 0px 0px -75px;
 }
 
 .search-result--thumbnail {
@@ -97,7 +101,6 @@ button {
 }
 
 
-
-.books{
-  margin: 0px 0px 100px 0px;
-} 
+.books-length{
+  max-width: 500px;
+}
